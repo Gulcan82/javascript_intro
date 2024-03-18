@@ -7,32 +7,28 @@
 </head>
 <body>
     <h2>Taschenrechner</h2>
- <p>Geben Sie zwei Zahlen ein, um mathematische Operationen durchzuführen:</p>
- <input type="number" id="number1" placeholder="Zahl 1">
- <input type="number" id="number2" placeholder="Zahl 2">
- <button onclick="performCalculations()">Berechne</button> 
- <h4>Ergebnisse der Berechnungen</h4>
- <div id="result"></div>
+    <p>Geben Sie zwei Zahlen ein, um mathematische Operationen durchzuführen:</p>
+    <input type="number" id="number1" placeholder="Zahl 1">
+    <input type="number" id="number2" placeholder="Zahl 2">
+    <button onclick="performCalculations()">Berechne</button>
+    <h4>Ergebnisse der Berechnungen</h4>
+    <div id="result"></div>
 
 
- <script>
-    function performCalculations(){
-        const number1 = parseInt(document.getElementById("number1").value);
-        const number2 = parseInt(document.getElementById("number2").value);
-        var sum = number1 + number2;
+    <script>
+        function performCalculations(){
+            const number1 = parseInt(document.getElementById("number1").value);
+            const number2 = parseInt(document.getElementById("number2").value);
+            var sum = number1 + number2;
 
-        const resultDiv = document.getElementById("result").innerHtml = `
-        <p>Summe von Zahl 1 und Zahl 2 ist: ${sum}.</p>
-            
-            
+            const resultDiv = document.getElementById("result").innerHTML = `
+            <p>Summe von Zahl 1 und Zahl 2 ist: ${sum}.</p>
             
             `;
 
-    }
+        }
 
+    </script>
 
-
- </script>
-    
 </body>
 </html>
